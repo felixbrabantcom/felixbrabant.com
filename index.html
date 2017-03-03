@@ -12,6 +12,14 @@ body {
 	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
 }
 
+	.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+	
 </style>
 
 <title>Félix Brabant.com </title>
@@ -26,7 +34,7 @@ body {
 
 <div class="container">
 
-<div class="jumbotron">
+<div class="jumbotron vertical-center">
   <h1>Hello, world!</h1>
   <p>...</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
